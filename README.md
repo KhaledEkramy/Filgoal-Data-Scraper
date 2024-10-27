@@ -68,6 +68,8 @@ Enter location where you wanna save the file: /path/to/save/location/
 ```
 
 This will create a CSV file named `2024-10-23_matches.csv` in the specified directory.
+## Output Example
+![image](https://github.com/user-attachments/assets/49da2795-0365-4ee1-b95a-5d24ac5b8ce8)
 
 ## File Structure
 
