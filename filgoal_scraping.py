@@ -14,7 +14,7 @@ while True:
   matches_date = input('Enter matches day in the following format: YYYY-MM-DD\t')
   # Checking if the date format is correct
   try:
-    validate_date_format(matches_date)
+    validate_date_format(matches_date.strip())
     print('The date format is correct.')
     break
   except ValueError as e:
@@ -61,7 +61,7 @@ for championship in championships:
   get_championship_matches_details(championship)
 
 # Saving our work in a csv file
-storing_location = input('Enter location where you wanna save the file: ')
+storing_location = input('Enter location where you wanna save the file: ').strip()
 if not storing_location.endswith('/'):
   storing_location += '/'
 with open(f'{storing_location}{matches_date}_matches.csv', 'w') as csv_file:
